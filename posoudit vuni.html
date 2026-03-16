@@ -4,43 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posoudit vůni</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <h1><a href="index.html">Vonný bar</a></h1>
+            <ul>
+                <li><a href="index.html">Náš bar</a></li>
+                <li><a href="posoudit vuni.html">Posoudit vůni</a></li>
+                <li><a href="https://github.com/K1ngL3sry/16.03.2026-vonn--bar">Můj GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Posoudit vůni</h2>
+        <form class="form-container">
+            <div class="form-group">
+                <label for="nazev">Název vůně</label>
+                <input type="text" id="nazev" required>
+            </div>
+
+            <div class="form-group">
+                <label for="typ">Typ vůně</label>
+                <select id="typ">
+                    <option>květinová</option>
+                    <option>ovocná</option>
+                    <option>kořeněná</option>
+                    <option>experimentální</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="datum">Datum vytvoření</label>
+                <input type="date" id="datum">
+            </div>
+
+            <div class="form-group">
+                <label for="intenzita">Intenzita</label>
+                <input type="range" id="intenzita" min="0" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="barva">Barva</label>
+                <input type="color" id="barva">
+            </div>
+
+            <div class="form-group">
+                <label for="kod">Kód vzorku</label>
+                <input type="text" id="kod" pattern="[A-Z]{2}-[0-9]{3}[A-Z]" placeholder="např. AB-123">
+            </div>
+
+            <div class="form-group">
+                <label for="obrazek">Obrázek vzorku</label>
+                <input type="file" id="obrazek">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+
+             <div class="form-group">
+                <label for="kontrolniEmail">Kontrolní Email</label>
+                <input type="email" id="kontrolniEmail">
+            </div>
+
+            <div class="form-buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Odeslat</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
-<form>
-
-<label>Název vůně</label>
-<input type="text" required>
-
-<label>Typ vůně</label>
-<select>
-<option>květinová</option>
-<option>ovocná</option>
-<option>kořeněná</option>
-<option>experimentální</option>
-</select>
-
-<label>Datum vytvoření</label>
-<input type="date">
-
-<label>Intenzita</label>
-<input type="range" min="0" max="100">
-
-<label>Barva</label>
-<input type="color">
-
-<label>Kód vzorku</label>
-<input type="text" pattern="[A-Z]{2}-[0-9]{3}[A-Z]">
-
-<label>Obrázek vzorku</label>
-<input type="file">
-
-<label>Email</label>
-<input type="email">
-
-<button type="reset">Reset</button>
-<button type="submit">Odeslat</button>
-
-</form>
