@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posoudit vůni</title>
+</head>
+<body>
+    
+</body>
+</html>
+<form>
+
+<label>Název vůně</label>
+<input type="text" required>
+
+<label>Typ vůně</label>
+<select>
+<option>květinová</option>
+<option>ovocná</option>
+<option>kořeněná</option>
+<option>experimentální</option>
+</select>
+
+<label>Datum vytvoření</label>
+<input type="date">
+
+<label>Intenzita</label>
+<input type="range" min="0" max="100">
+
+<label>Barva</label>
+<input type="color">
+
+<label>Kód vzorku</label>
+<input type="text" pattern="[A-Z]{2}-[0-9]{3}[A-Z]">
+
+<label>Obrázek vzorku</label>
+<input type="file">
+
+<label>Email</label>
+<input type="email">
+
+<button type="reset">Reset</button>
+<button type="submit">Odeslat</button>
+
+</form>
